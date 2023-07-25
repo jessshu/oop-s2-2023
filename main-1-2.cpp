@@ -18,5 +18,4 @@ int main() {
     std::cout << "The average is: " << array_mean(array, number) << std::endl; 
     
     return 0; 
-
 }
