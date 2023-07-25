@@ -19,14 +19,14 @@ int main() {
   }
 
   // loop to read in values for second array 
-  for (int i = 0; i < lim < i++) {
+  for (int i = 0; i < lim; i++) {
     std::cout << "Enter a value for array 2: ";
     std::cin >> array2[i];
   }
 
   // display result
-  std::cout << "There are " << sum_two_arrays(array1, array2, lim)
-            << " numbers that match your input." << std::endl;
+  std::cout << "The sum of your 2 arrays is: " << sum_two_arrays(array1, array2, lim)
+            << std::endl;
 
   return 0;
 }
