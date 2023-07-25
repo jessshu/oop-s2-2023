@@ -1,3 +1,3 @@
 main :	
-	g++ main-2-5.cpp function-2-5.cpp -o main.out
+	g++ main-3-1.cpp function-3-1.cpp -o main.out
 	./main.out
