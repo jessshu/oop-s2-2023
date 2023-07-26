@@ -24,10 +24,6 @@ void two_five_nine(int array[], int n) {
             case 9: 
             nine_count++;
             break;
-
-            default:
-            std::cout << "There are no 2, 5, or 9s in this array." << std::endl;
-
         }
     }
 
@@ -42,5 +38,5 @@ void two_five_nine(int array[], int n) {
     // print out results 
     std::cout << "2:" << two_count << ";5:" << five_count << ";9:" << nine_count << ";" << std::endl;
 
-    return;    // HOW TF?????!?!?!?!?!?
+    return;   
 }

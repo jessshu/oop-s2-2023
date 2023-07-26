@@ -18,6 +18,9 @@ int main() {
         std::cin >> array[i];
     }
 
+    // call to function 
+    two_five_nine(array, len);
+
     //return 
     return 0;
 }
