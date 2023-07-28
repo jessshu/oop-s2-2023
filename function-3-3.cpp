@@ -11,16 +11,17 @@ double weighted_average(int array[], int n) {
     double ind_ave = 0;
     int i = 0;
     int temp_var = 0;
-    int counter = 0;
+    double counter = 0;
 
     while (i < n) {
         counter = 0;
         temp_var = array[i];
         for (int j = 0; j < n; j++) {
-            if (temp_var == array[i])
+            if (temp_var == array[j])
             counter++; // increment counter
         }
-        ind_ave = (array[i]*counter) / n;
+
+        ind_ave = ((double)(array[i])*(double)(counter))/n;
         total_ave = total_ave + ind_ave;
         i++;
     }
