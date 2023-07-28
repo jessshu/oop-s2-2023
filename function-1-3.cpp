@@ -10,8 +10,8 @@ int num_count(int array[], int n, int number) {
 
 
 // loop over all elements 
-  for (int i = 0; i < number; i++) {
-    if (array[i] == n) {
+  for (int i = 0; i < n; i++) {
+    if (array[i] == number) {
         counter++;
     }
   }
