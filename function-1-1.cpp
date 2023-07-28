@@ -9,7 +9,7 @@ int array_sum(int array[], int n) {
   int sum = 0;
 
 // loop for calculating running sum 
-  for (int i = 0; i <= n; i++) {
+  for (int i = 0; i < n; i++) {
     sum = sum + array[i];
   }
 
