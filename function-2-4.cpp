@@ -14,6 +14,10 @@ int array_min(int integers[], int length) {
 }
 
 int array_max(int integers[], int length) {
+    if (length < 0) {
+        return 0;
+    }
+    
     int max = integers[0];
     
     for (int i = 1; i < length; i++) {
