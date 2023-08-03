@@ -4,30 +4,17 @@ bool is_palindrome(int integers[], int length) {
     if (length < 0) {
         return false; 
     }
+
+        for (int i = 0; i < length/2; i++) {
+        // if opposite elements are not the same then return false 
+        if (integers[i] != integers[length-i-1] || integers[i] > integers[i+1]) {
+            return false; 
+        }
+    } 
     
-    // determine if palin
-    if(length % 2 == 1) {
-        // if odd number of elements in array 
-        for (int i = length; i >=0; i--) {
-            if (integers[i] == integers[length-i]) {
-                return true;
-            } else {
-
-            }
-        }
-    } else {
-        // if even number of elements in array
-        for (int j = length; j >= (length/2)-1; j--) {
-            if (integers[j] == integers[length-j]) {
-                return true;
-            } else {
-                return false;
-            }
-        }
-    }
-
-    return false; 
+    return true;
 }
+
 
 int sum_array_elements(int integers[], int length) {
     int sum = 0; 
@@ -38,6 +25,8 @@ int sum_array_elements(int integers[], int length) {
 
     return sum;
 }
+
+
 int sum_if_palindrome(int integers[], int length) {
     int sum = 0;
 

@@ -4,8 +4,8 @@
 extern int sum_if_palindrome(int integers[], int length);
 
 int main() {
-    int len = 6;
-    int nums[6] = {1,2,3,3,2,1};
+    int len = 5;
+    int nums[5] = {1,2,3,2,1};
 
     int sum = sum_if_palindrome(nums,len);
 
