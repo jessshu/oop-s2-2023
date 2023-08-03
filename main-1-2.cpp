@@ -5,18 +5,17 @@ int main() {
     // initialise 
     int array[10][10];
     
-    for (int i = 0 ; i < 10; i++) {
+    for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 10; j++) {
-            if (i==j) {
+            if (i == j)
                 array[i][j] = 1;
-            } else {
+            else
                 array[i][j] = 0;
-            }
         }
     }
 
     // call to function
-    is_identity(array);
+    std::cout<<is_identity(array);
 
 
     return 0;
