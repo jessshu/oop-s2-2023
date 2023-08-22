@@ -1,9 +1,9 @@
 #include "Orchestra.h"
 #include "Musician.h"
 
-Orchestra::Orchestra():Orchestra(0) {   };
+Orchestra::Orchestra():Orchestra(0,0, nullptr) {   };
 
-Orchestra::Orchestra(int size): size(size), curr_size(0), members(members) {
+Orchestra::Orchestra(int size, int curr_size, Musician *members): size(size), curr_size(0), members(members) {
     members = new Musician[size];
 };
 
@@ -15,7 +15,7 @@ int Orchestra::get_current_number_of_members() {
 bool Orchestra::has_instrument(std::string instrument) {
     // return true if musician plays specified instrument
     for (int i =0; i < curr_size; i++) {
-        if (instrument == members[i].get_instrument()) {
+        if ( instrument == members[i].get_instrument()) {
             return true; 
         } else {
             return false;  
