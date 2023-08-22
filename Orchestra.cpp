@@ -32,6 +32,7 @@ bool Orchestra::add_musician(Musician new_musician) {
     // return true and add musician if orch is not full 
     if (Orchestra::get_current_number_of_members() < curr_size) {
         int counter; 
+        curr_size++;
         members[counter] = new_musician; 
         counter++;
         return true;
