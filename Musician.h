@@ -10,7 +10,7 @@ private:
 
 public:
     // default
-    Musician(): Musician("null", 0) {};
+    Musician();
 
     // methods
     Musician(std::string instrument, int experience);
