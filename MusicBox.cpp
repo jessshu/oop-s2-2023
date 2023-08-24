@@ -16,5 +16,4 @@ int MusicBox::get_width() {
 }// returns the width in centimetres of the music box
 
 MusicBox::~MusicBox(){
-    delete[] MusicBox;
 }  // A default destructor~
