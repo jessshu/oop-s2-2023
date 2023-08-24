@@ -13,7 +13,7 @@ class Orchestra {
 
     public:
         Orchestra();           // default constructor
-        Orchestra(int size, int curr_size, Musician *members);   // constructor for an orchestra of given size
+        Orchestra(int size);   // constructor for an orchestra of given size
 
         // returns the number of musicians who have joined the orchestra
         int get_current_number_of_members(); 
