@@ -29,11 +29,11 @@ bool StoreShelf::add_music_box(MusicBox a_music_box){
     int box_width = a_music_box.get_width();
 
     for (int i = 0; i < curr_boxes; i++) {
-        total_box_width = width + box_width;
+        total_box_width = width - box_width;
     }
 
     for (int j = 0; j < width; j++) {
-        if (total_box_width < width) {
+        if (total_box_width >= 0) {
             boxes[curr_boxes] = a_music_box;
             curr_boxes++;
             return true;
