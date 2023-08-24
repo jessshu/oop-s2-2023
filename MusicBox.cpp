@@ -5,7 +5,9 @@
 MusicBox:: MusicBox() : songname(""), width(0){};  // a default constructor
 MusicBox:: MusicBox(std::string songname, int width)
     : songname(songname),
-      width(width){};  // a constructor that takes the song and width as arguments
+      width(width){
+        box = new int(width);
+      };  // a constructor that takes the song and width as arguments
 
 std::string MusicBox::get_song() {
   return songname;
@@ -16,4 +18,5 @@ int MusicBox::get_width() {
 }// returns the width in centimetres of the music box
 
 MusicBox::~MusicBox(){
+    delete[] box; 
 }  // A default destructor~
