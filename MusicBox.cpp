@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-MusicBox:: MusicBox() : songname(""), width(0){};  // a default constructor
+MusicBox:: MusicBox() : songname(" "), width(0){};  // a default constructor
 MusicBox:: MusicBox(std::string songname, int width)
     : songname(songname),
       width(width){
