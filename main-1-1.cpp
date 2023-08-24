@@ -1,12 +1,13 @@
+#include "MusicBox.h"
 #include <iostream>
-#include "Musician.h"
 
 int main() {
-    Musician m1;
-    std::cout << "Default instrument: " << m1.get_instrument() << ", Default experience: " << m1.get_experience() << std::endl;
+    // init class
+    MusicBox M("song", 3);
 
-    Musician m2("guitar", 5);
-    std::cout << "Instrument: " << m2.get_instrument() << ", Experience: " << m2.get_experience() << std::endl;
+    // default musicbox
+    std::cout << M.get_song() << std::endl;
+    std::cout << M.get_width() << std::endl;
 
     return 0;
 }
