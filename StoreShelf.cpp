@@ -4,7 +4,7 @@
 
 StoreShelf::StoreShelf(): width(0) {};                     // default constructor
 StoreShelf::StoreShelf(int width):width(width), curr_boxes(0) {
-    boxes = new MusicBox[width];
+    boxes = new MusicBox[curr_boxes];
 }           // constructor for shelf with given width in centimetres
 
 int StoreShelf::get_width(){
@@ -28,7 +28,7 @@ bool StoreShelf::add_music_box(MusicBox a_music_box){
     int counter = 0; 
 
     for (int i = 0; i < curr_boxes; i++) {
-        total_box_width = total_box_width + StoreShelf::boxes[i].get_width();
+        total_box_width = width - StoreShelf::boxes[i].get_width();
     }
 
     for (int j = 0; j < width; j++) {
