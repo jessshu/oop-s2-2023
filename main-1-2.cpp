@@ -4,10 +4,6 @@
 #include <iostream>
 
 int main() {
-    // initialise classes 
-    StoreShelf Shelf(2);
-    MusicBox m2("Two", 1);
-    MusicBox m3("Three",1);
 
     return 0;
 }
