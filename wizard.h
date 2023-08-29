@@ -14,7 +14,7 @@ class Wizard : public Player {
     Wizard(std::string name, int health, int damage, int mana);
 
         // deals damage based on player's mana points 
-        void castSpell(Player* opponent, int mana);
+        void castSpell(Player* opponent);
 
         int getMana();
         void setMana(int new_mana);
