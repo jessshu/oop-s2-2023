@@ -20,6 +20,7 @@ class ParkingLot {
         bool parkVehicle(Vehicle* new_vehicle);
         bool unparkVehicle(int ID);
 
+        ~ParkingLot(); 
 
 
 };

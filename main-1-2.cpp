@@ -38,7 +38,7 @@ int main() {
         }
 
     }
-
+    std::cout<< "Count is: " <<lot1.getCount()<<"\n";
     // to unpark 
     int unpark_ID;
     std::cout << "Enter the ID to unpark: " << std::endl;
