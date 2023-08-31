@@ -37,4 +37,6 @@ int main() {
     for (int j = 0; j < num_vehicles; j++) {
         std::cout << vehicles[j].getParkingDuration() << std::endl;
     }
+
+    delete[] vehicles;
 }
