@@ -17,5 +17,5 @@ int Bus::getParkingDuration() {
 
     int duration = current_time - timeofEntry;
 
-    return duration; 
+    return duration*.75; 
 };

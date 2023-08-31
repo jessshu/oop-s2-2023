@@ -17,6 +17,6 @@ int Car::getParkingDuration() {
 
     int duration = current_time - timeofEntry;
 
-    return duration; 
+    return duration*.9; 
 };
 

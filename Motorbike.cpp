@@ -17,5 +17,5 @@ int Motorbike::getParkingDuration() {
 
     int duration = current_time - timeofEntry;
 
-    return duration; 
+    return duration*.85; 
 };
