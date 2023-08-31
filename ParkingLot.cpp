@@ -18,7 +18,7 @@ bool ParkingLot::parkVehicle(Vehicle* new_vehicle) {
         vehicle_count++;
         return true;
     } else {
-        std::cout << "The lot is full." << std::endl;
+        std::cout << "The lot is full" << std::endl;
         return false;
     }
 
@@ -32,7 +32,7 @@ bool ParkingLot::unparkVehicle(int ID) {
 
             return true;
         } else {
-            std::cout << "Vehicle not in the lot." << std::endl;
+            std::cout << "Vehicle not in the lot" << std::endl;
             return false;
         }
     }
