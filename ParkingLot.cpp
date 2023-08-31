@@ -28,6 +28,7 @@ bool ParkingLot::parkVehicle(Vehicle* new_vehicle) {
 bool ParkingLot::unparkVehicle(int ID) {
     for (int i = 0; i < vehicle_count; i++) {
         if (vehicles[i]->getID() == ID) {
+            delete vehicles[i];
             vehicle_count--;
 
             return true;
