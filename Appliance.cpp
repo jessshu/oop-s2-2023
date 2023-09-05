@@ -4,7 +4,7 @@ Appliance::Appliance() : powerRating(0) {
     isOn = false; 
 }
 
-Appliance::Appliance(int powerRating) : powerRating(powerRating) {
+Appliance::Appliance(int powerRating) : powerRating(powerRating){
 
 }
 
@@ -19,3 +19,16 @@ void Appliance::turnOff() {
 double Appliance::getPowerConsumption() {
     return 0;
 }
+
+bool Appliance::get_isOn() {
+    return isOn;
+}
+
+int Appliance::get_powerRating() {
+    return powerRating;
+}
+
+void Appliance::set_powerRating(int new_powerRating) {
+    powerRating = new_powerRating; 
+};
+
