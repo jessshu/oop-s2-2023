@@ -4,12 +4,13 @@
 #include <iostream>
 
 class Appliance {
+    protected:
+        int powerRating;
+        bool isOn;
+
     public: 
         Appliance();
         Appliance(int powerRating);
-
-        int powerRating;
-        bool isOn;
 
         void turnOn();
         void turnOff();
