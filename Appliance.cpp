@@ -30,5 +30,5 @@ int Appliance::get_powerRating() {
 
 void Appliance::set_powerRating(int new_powerRating) {
     powerRating = new_powerRating; 
-};
+}
 
