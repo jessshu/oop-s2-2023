@@ -2,7 +2,9 @@
 #include "Car.h"
 
 Ford::Ford() {}
-Ford::Ford(int badgeNumber, int price) : Car(price), badgeNumber(badgeNumber), litresOfFuel(60) {}
+Ford::Ford(int badgeNumber, int price) : Car(price), badgeNumber(badgeNumber), litresOfFuel(60) {
+    emissions = 0;
+}
 
 void Ford::refuel(int litres) {
     if (litres+litresOfFuel > 60) {

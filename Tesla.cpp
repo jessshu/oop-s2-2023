@@ -2,7 +2,9 @@
 #include "Tesla.h"
 
 Tesla::Tesla() {};
-Tesla::Tesla(char model, int price) : Car(price), model(model), batteryPercentage(100) {}
+Tesla::Tesla(char model, int price) : Car(price), model(model), batteryPercentage(100) {
+        emissions = 0;
+}
 
 void Tesla::chargeBattery(int mins) {
     if (batteryPercentage+(mins*0.5) > 100) {
