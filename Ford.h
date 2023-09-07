@@ -16,6 +16,11 @@ public:
     void refuel(int litres); // cannot exceed 60l
     void drive(int kms);     
 
+    void set_badgeNumber(int newBadgenum);
+    void set_litresOfFuel(float newLitres);
+    int get_badgeNumber();
+    float get_litresOfFuel();
+
 
 };
 
