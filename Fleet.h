@@ -16,6 +16,8 @@ the array should have Tesla, Ford, Car, Ford, Tesla.
 */
 
     Car **get_fleet();      // Returns the array of pointers to the five Car objects
+    ~Fleet();
 };
+
 
 #endif 

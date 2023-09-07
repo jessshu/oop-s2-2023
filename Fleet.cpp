@@ -39,3 +39,9 @@ Fleet::Fleet() {
 Car **Fleet::get_fleet() {
     return fleet; 
 }
+
+Fleet::~Fleet() {
+    delete[] fleet; 
+}
+
+
