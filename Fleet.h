@@ -6,10 +6,10 @@
 
 class Fleet
 {
-private:
+public:
     Car** fleet;
 
-    
+
     Fleet();                        
 /* creates a fleet containing pointers to 5 Car objects as an array;     
 the array should have Tesla, Ford, Car, Ford, Tesla.
