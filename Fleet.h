@@ -8,12 +8,14 @@ class Fleet
 {
 private:
     Car** fleet;
-Fleet();                        
+
+    
+    Fleet();                        
 /* creates a fleet containing pointers to 5 Car objects as an array;     
 the array should have Tesla, Ford, Car, Ford, Tesla.
 */
 
-Car **get_fleet();      // Returns the array of pointers to the five Car objects
+    Car **get_fleet();      // Returns the array of pointers to the five Car objects
 };
 
 #endif 
