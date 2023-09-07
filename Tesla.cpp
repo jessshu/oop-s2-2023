@@ -5,28 +5,25 @@ Tesla::Tesla() {};
 Tesla::Tesla(char model, int price) : Car(price), model(model), batteryPercentage(100) {}
 
 void Tesla::chargeBattery(int mins) {
-    for (int i = 0; i < mins; i++) {
-        while (batteryPercentage < 100) {
-                batteryPercentage = batteryPercentage + 0.5;
-        }
+    if (batteryPercentage+(mins*0.5) > 100) {
+        batteryPercentage = 100;
+    } else {
+        batteryPercentage = batteryPercentage + (0.5*mins);
     }
-
 }
 
 void Tesla::drive(int kms) {
-    if (batteryPercentage == 0) {
-        emissions = emissions; 
-    } else {
-        while (batteryPercentage > 0) {
-            for (int i = 0; i < kms; i++) {
-                emissions = emissions + (i*74.0);
-                batteryPercentage = batteryPercentage - 0.2;
-            }
-        }
+    if (batteryPercentage > 0) {
+        emissions = emissions + (kms*74);
+        if (batteryPercentage - (kms/5) > 0) {
+            batteryPercentage = batteryPercentage - (kms/5);
+        } 
 
+    } else {
+            batteryPercentage = 0;
     }
-    
 }
+
 
 char Tesla::get_model() {
     return model;
