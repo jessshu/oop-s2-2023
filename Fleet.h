@@ -9,7 +9,7 @@ class Fleet
 private:
     Car** fleet;
 
-protected:
+public:
 
     Fleet();                        
 /* creates a fleet containing pointers to 5 Car objects as an array;     
