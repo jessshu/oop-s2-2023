@@ -21,4 +21,4 @@ void Car::set_emissions(int newEmissions) {
 
 int Car::get_emissions() {
     return emissions; 
-};
+}

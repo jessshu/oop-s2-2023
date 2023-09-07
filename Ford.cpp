@@ -48,5 +48,4 @@ void Ford::set_litresOfFuel(float newLitres) {
 
 float Ford::get_litresOfFuel() {
     return litresOfFuel;
-};
-
+}

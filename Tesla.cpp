@@ -1,7 +1,7 @@
 #include "Car.h"
 #include "Tesla.h"
 
-Tesla::Tesla() {};
+Tesla::Tesla() {}
 Tesla::Tesla(char model, int price) : Car(price), model(model), batteryPercentage(100) {
         emissions = 0;
 }

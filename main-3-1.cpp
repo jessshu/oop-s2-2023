@@ -6,6 +6,7 @@
 
 int main() {
     Ford f1(3,4000);
-    
+
     return 0;
 }
+
