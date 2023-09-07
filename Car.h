@@ -18,6 +18,7 @@ public:
     int get_price();
     int get_emissions(); 
     void set_price(int newPrice);
+    void set_emissions(int newEmissions);
     
 };
 

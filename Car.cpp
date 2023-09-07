@@ -15,6 +15,10 @@ void Car::set_price(int newPrice) {
     price = newPrice; 
 }
 
+void Car::set_emissions(int newEmissions) {
+    emissions = newEmissions;
+}
+
 int Car::get_emissions() {
     return emissions; 
 };
