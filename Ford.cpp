@@ -13,9 +13,16 @@ void Ford::refuel(int litres) {
 }
 
 void Ford::drive(int kms) {
-    if (litresOfFuel > 0) {
+    if (litresOfFuel- (kms/5.0) > 0) {
+        litresOfFuel = litresOfFuel - (kms/5.0);    
+    } else {
+        litresOfFuel = 0;
+    }
+
+    if (emissions + (kms*234.0) > 70200-1) {
+        emissions = 70200;
+    } else {
         emissions = emissions + kms*234.0;
-        litresOfFuel = litresOfFuel - (kms/5.0);
     }
 }
 
