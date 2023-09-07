@@ -6,22 +6,22 @@
 Fleet::Fleet() {
     fleet = new Car*[5];
 
-    Tesla *c1=0;
+    Tesla *c1;
     c1->set_model('S');
     c1->set_price(10000);
 
-    Ford* c2=0;
+    Ford* c2;
     c2->set_badgeNumber(1);
     c2->set_price(20000);
 
-    Car* c3=0;
+    Car* c3;
     c3->set_price(3000);
 
-    Ford* c4=0; 
+    Ford* c4; 
     c4->set_price(40000);
     c4->set_badgeNumber(2);
 
-    Tesla* c5=0;
+    Tesla* c5;
     c5->set_model('T');
     c5->set_price(50000);
 
