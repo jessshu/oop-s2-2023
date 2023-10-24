@@ -22,7 +22,7 @@ public:
 
         Explosion expl(x_pos, y_pos);
 
-        expl.setType('M');
+        expl.setType('X');
 
         return expl; 
     }
