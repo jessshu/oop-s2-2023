@@ -18,10 +18,10 @@ public:
     static std::tuple<int, int> generateRandomPost(int gridWidth, int gridHeight) {
         // use rand() to generate random integer from 0 to gridWidth 
         int x_val = rand() % gridWidth+1;
-        int y_val = rand() % gridHeight+1;
+        int y_val = rand() % gridHeight+1; 
 
-        std::tuple<int,int> randomPost;
-        randomPost = std::make_tuple(x_val, y_val);
+        std::tuple<int,int> randomPost; 
+        randomPost = std::make_tuple(x_val, y_val); 
 
         return randomPost; 
     };

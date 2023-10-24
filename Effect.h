@@ -10,7 +10,7 @@ class Effect
 private:
     
 public:
-    virtual void apply (GameEntity& entity); // pure virtual, needs to be implemented in other classes 
+    virtual void apply (GameEntity& entity) =0; // pure virtual, needs to be implemented in other classes 
     ~Effect(); 
 
 };
