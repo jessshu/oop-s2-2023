@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <tuple>
+#include <math.h>
 #include "GameEntity.h"
 #include "Effect.h"
 
@@ -27,7 +28,7 @@ public:
 
     static double calculateDistance(std::tuple<int,int> pos1, std::tuple<int, int> pos2) {
         // equation : sqrt((x2-x1)^2+(y2-y1)^2)
-        double distance = sqrt((std::get<0>(pos2) - std::get<0>(pos1))^2 - (std::get<1>(pos2) - std::get<1>(pos1)^2) );
+        double distance = sqrt(((std::get<0>(pos2) - std::get<0>(pos1))^2) - ((std::get<1>(pos2) - std::get<1>(pos1)^2)) );
 
         return distance; 
     };
