@@ -24,7 +24,7 @@ public:
         return; 
     }
 
-    ~Ship();
+    ~Ship() {};
 };
 
 #endif 

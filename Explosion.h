@@ -22,7 +22,7 @@ public:
         explosion.setType('X');
     }
 
-    ~Explosion();
+    ~Explosion() {};
 };
 
 #endif 

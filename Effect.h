@@ -11,7 +11,7 @@ private:
     
 public:
     virtual void apply (GameEntity& entity) =0; // pure virtual, needs to be implemented in other classes 
-    ~Effect(); 
+    ~Effect() {}; 
 
 };
 

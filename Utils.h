@@ -33,7 +33,7 @@ public:
         return distance; 
     };
 
-    ~Utils(); 
+    ~Utils() {}; 
 
 
 };

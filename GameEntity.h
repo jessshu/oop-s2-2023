@@ -31,7 +31,7 @@ public:
         type = type_;
     }
 
-    ~GameEntity();
+    ~GameEntity() {};
 };
 
 #endif 
