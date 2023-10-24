@@ -11,7 +11,7 @@ protected:
     char type; // type of entity
 public:
 
-    GameEntity(); 
+    GameEntity() {}; 
     
     GameEntity(int x, int y, char type) {    };
 
