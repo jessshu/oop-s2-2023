@@ -15,7 +15,7 @@ public:
         GameEntity(x,y,'M');
     };
 
-    Explosion explosion() {
+    Explosion explode() {
 
         int x_pos = std::get<0>(position);
         int y_pos = std::get<1>(position);
