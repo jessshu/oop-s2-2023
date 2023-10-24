@@ -4,6 +4,9 @@
 #include "GameEntity.h"
 #include "Effect.h"
 
+#include <iostream>
+#include <tuple>
+
 class Explosion : public GameEntity, public Effect
 {
 private:

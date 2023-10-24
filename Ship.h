@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "GameEntity.h"
+#include <tuple>
 
 class Ship : public GameEntity
 {
@@ -22,7 +23,7 @@ public:
         
         return; 
     }
-    
+
     ~Ship();
 };
 

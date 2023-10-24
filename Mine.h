@@ -3,6 +3,8 @@
 
 #include "Explosion.h"
 #include "GameEntity.h"
+#include <iostream>
+#include <tuple>
 
 class Mine : public GameEntity
 {
