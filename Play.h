@@ -46,6 +46,14 @@ public:
 
         while (index < maxCycles && !game) {
             index++;
+                std::tuple<int,int> persona_loc = matrix[i]->getLoc(); 
+                            if (std::get<0>(persona_loc) > matrix.size() && std::get<1>(persona_loc) > matrix.size()) {
+                    std::cout << "Persona has won the game!" << std::endl; 
+                    game = true; 
+                    Pwin = true; 
+                    break; 
+                }
+
 
             for (int i =0; i < matrix.size(); i++) {
                 // if persona, call shift
@@ -61,14 +69,9 @@ public:
                     }
                 }
 
-                std::tuple<int,int> persona_loc = matrix[i]->getLoc(); 
 
-                if (std::get<0>(persona_loc) > matrix.size() && std::get<1>(persona_loc) > matrix.size()) {
-                    std::cout << "Persona has won the game!" << std::endl; 
-                    game = true; 
-                    Pwin = true; 
-                    break; 
-                }
+
+
             }
         }
 
