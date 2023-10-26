@@ -43,7 +43,7 @@ public:
         int index = 0;
         bool game = false; 
 
-                if (index >= maxCycles) {
+        if (index >= maxCycles) {
             std::cout << "Maximum number of cycles reached. Game over." << std::endl; 
         }
 
@@ -78,6 +78,10 @@ public:
             } 
 
             index++;
+        }
+
+                if (index >= maxCycles) {
+            std::cout << "Maximum number of cycles reached. Game over." << std::endl; 
         }
 
 
