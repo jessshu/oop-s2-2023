@@ -61,10 +61,9 @@ public:
 
                 std::tuple<int,int> persona_loc = matrix[i]->getLoc(); 
 
-                // bruhh how do i know how big the matrix is 
-                //if (std::get<0>(persona_loc) > matrix.) {
-                //     std::cout << "Person has won the game!" << std::endl; 
-                // }
+                if (std::get<0>(persona_loc) > matrix.size() || std::get<1>(persona_loc) > matrix.size()) {
+                    std::cout << "Person has won the game!" << std::endl; 
+                }
 
             }
             index++; 
