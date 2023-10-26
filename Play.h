@@ -42,10 +42,16 @@ public:
     void playCycle(int maxCycles, double snareTriggerDistance) {
         int index = 0; 
 
+        if (index >= maxCycles) {
+            std::cout << "Maximum number of cycles reached. Game over." << std::endl; 
+        }
+
 
         // determine how big the matrix is 
+        //how????
 
         while (index < maxCycles) {
+            index++;
 
             for (int i =0; i < matrix.size(); i++) {
                 // if persona, call shift
@@ -65,15 +71,10 @@ public:
 
                 if (std::get<0>(persona_loc) > matrix.size() || std::get<1>(persona_loc) > matrix.size()) {
                     std::cout << "Persona has won the game!" << std::endl; 
-                    index = maxCycles+1;  
+                    break; 
                 }
 
-            }
-            index++; 
-        }
-
-        if (index = maxCycles) {
-            std::cout << "Maximum number of cycles reached. Game over." << std::endl; 
+            } 
         }
 
 
