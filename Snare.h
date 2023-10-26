@@ -19,6 +19,12 @@ public:
     bool isOperative() {
         return operative; 
     };
+
+    void implement(Spot &spot) {
+        spot.setCategory('S');
+
+        operative = false; 
+    }
     ~Snare() {};
 };
 
