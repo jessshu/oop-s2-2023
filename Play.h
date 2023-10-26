@@ -45,8 +45,12 @@ public:
         bool Pwin = false; 
 
         while (index < maxCycles && !game) {
-            index++;
+              if (index > maxCycles && Pwin == false) {
+            std::cout << "Maximum number of cycles reached. Game over." << std::endl; 
+        }
 
+            index++;
+          
             
             for (int i =0; i < matrix.size(); i++) {
                             std::tuple<int,int> persona_loc = matrix[i]->getLoc(); 
@@ -73,17 +77,11 @@ public:
                     }
                 }
 
-
-
-
             }
         }
 
 
-        if (index >= maxCycles-1 && Pwin == false) {
-            std::cout << "Maximum number of cycles reached. Game over." << std::endl; 
-        }
-
+      
     };
 
     ~Play() {   };
