@@ -12,7 +12,7 @@ private:
 public:
     Assists() {};
 
-    std::tuple<int, int> createRandomLoc(int matrixWidth, int matrixHeight) {
+    static std::tuple<int, int> createRandomLoc(int matrixWidth, int matrixHeight) {
         int x_val = rand() % (matrixWidth+1);
         int y_val = rand() % (matrixHeight+1);
 
@@ -21,7 +21,7 @@ public:
         return randLoc; 
     };
 
-    double evaluateDistance(std::tuple<int, int> loc1, std::tuple<int, int> loc2) {
+   static double evaluateDistance(std::tuple<int, int> loc1, std::tuple<int, int> loc2) {
         double x = std::get<0>(loc2) - std::get<0>(loc1); 
         double y = std::get<1>(loc2) - std::get<1>(loc1); 
 

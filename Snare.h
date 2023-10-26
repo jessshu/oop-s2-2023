@@ -16,7 +16,9 @@ public:
 
     Snare(int x, int y) : Spot(x,y,'S')  {};
 
-    bool isOperative() {};
+    bool isOperative() {
+        return operative; 
+    };
     ~Snare() {};
 };
 
