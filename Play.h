@@ -43,6 +43,10 @@ public:
         int index = 0;
         bool game = false; 
 
+                if (index >= maxCycles) {
+            std::cout << "Maximum number of cycles reached. Game over." << std::endl; 
+        }
+
 
         // determine how big the matrix is 
         //how????
@@ -74,10 +78,6 @@ public:
             } 
 
             index++;
-        }
-
-        if (index >= maxCycles) {
-            std::cout << "Maximum number of cycles reached. Game over." << std::endl; 
         }
 
 
