@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <tuple>
+#include <vector>
 
 #include "Spot.h"
 #include "Persona.h"

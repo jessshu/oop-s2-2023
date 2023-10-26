@@ -16,7 +16,7 @@ public:
         int x_val = rand() % (matrixWidth+1);
         int y_val = rand() % (matrixHeight+1);
 
-        std::tuple<int,int> randLoc(x_val,y_val);
+        std::tuple<int,int> randLoc(x_val-1,y_val);
 
         return randLoc; 
     };
