@@ -64,8 +64,8 @@ public:
                 std::tuple<int,int> persona_loc = matrix[i]->getLoc(); 
 
                 if (std::get<0>(persona_loc) > matrix.size() || std::get<1>(persona_loc) > matrix.size()) {
-                    std::cout << "Person has won the game!" << std::endl; 
-                    index = maxCycles;  
+                    std::cout << "Persona has won the game!" << std::endl; 
+                    index = maxCycles+1;  
                 }
 
             }
