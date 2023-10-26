@@ -77,7 +77,7 @@ public:
                         index++;
         }
 
-                if (index > maxCycles) {
+                if (!Pwin) {
             std::cout << "Maximum number of cycles reached. Game over." << std::endl; 
         }
 
