@@ -52,6 +52,11 @@ public:
         //how????
 
         while (index <= maxCycles && !game) {
+            index++;
+
+            if (index >= maxCycles) {
+            std::cout << "Maximum number of cycles reached. Game over." << std::endl; 
+            game = true; 
 
             for (int i =0; i < matrix.size(); i++) {
                 // if persona, call shift
@@ -77,11 +82,7 @@ public:
 
             } 
 
-            index++;
 
-            if (index >= maxCycles) {
-            std::cout << "Maximum number of cycles reached. Game over." << std::endl; 
-            game = true; 
             }
         }
 
