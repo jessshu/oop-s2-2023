@@ -13,7 +13,7 @@ private:
 public:
     Influence() {}; 
 
-    virtual void implement(Spot& spot);
+    virtual void implement(Spot& spot)=0;
 
     ~Influence() {};
 };

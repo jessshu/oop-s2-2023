@@ -7,11 +7,12 @@
 
 int main() {
 
-    Spot s(10,10,'S'); 
-    Spot d(20,20,'S'); 
+    // Spot s(10,10,'S'); 
+    // Spot d(20,20,'S'); 
 
-    double distance = Assists::evaluateDistance(s.getLoc(),d.getLoc());
+    // double distance = Assists::evaluateDistance(s.getLoc(),d.getLoc());
 
-    std::cout << distance << std::endl; 
+    // std::cout << distance << std::endl; 
+
     return 0; 
 }

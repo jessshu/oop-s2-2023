@@ -31,6 +31,9 @@ public:
         category = category_; 
     };
 
+    virtual void shift(int dx, int dy) {}; 
+    virtual void implement(Spot& spot) {};
+
     ~Spot() {};
 };
 
