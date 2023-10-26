@@ -42,7 +42,7 @@ public:
     void playCycle(int maxCycles, double snareTriggerDistance) {
         int index = 0; 
 
-        // count 
+        // determine how big the matrix is 
 
         while (index < maxCycles) {
 
@@ -64,6 +64,7 @@ public:
 
                 if (std::get<0>(persona_loc) > matrix.size() || std::get<1>(persona_loc) > matrix.size()) {
                     std::cout << "Person has won the game!" << std::endl; 
+                    break; 
                 }
 
             }
