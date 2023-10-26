@@ -6,7 +6,7 @@
 
 class Spot
 {
-private:
+protected:
     std::tuple<int, int> location;
     char category; 
 public:

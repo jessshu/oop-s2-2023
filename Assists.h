@@ -11,7 +11,6 @@ private:
     /* data */
 public:
     Assists() {};
-    Assists(/* args */);
 
     std::tuple<int, int> createRandomLoc(int matrixWidth, int matrixHeight) {
         int x_val = rand() % (matrixWidth+1);

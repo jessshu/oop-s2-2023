@@ -15,7 +15,6 @@ public:
 
     virtual void implement(Spot& spot);
 
-    Influence(/* args */) {};
     ~Influence() {};
 };
 

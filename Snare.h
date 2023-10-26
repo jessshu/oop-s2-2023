@@ -4,14 +4,19 @@
 #include <iostream>
 #include <tuple>
 
-class Snare
+#include "Spot.h"
+#include "Influence.h"
+
+class Snare : public Spot, public Influence
 {
 private:
-    /* data */
+    bool operative; 
 public:
     Snare() {};
 
-    Snare(/* args */) ;
+    Snare(int x, int y) : Spot(x,y,'S')  {};
+
+    bool isOperative() {};
     ~Snare() {};
 };
 
