@@ -31,6 +31,8 @@ public:
         type = type_;
     }
 
+    virtual void move(int dx, int dy); 
+
     ~GameEntity() {};
 };
 
