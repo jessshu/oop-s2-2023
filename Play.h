@@ -42,6 +42,7 @@ public:
     void playCycle(int maxCycles, double snareTriggerDistance) {
         int index = 0;
         bool game = false; 
+        bool Pwin = false; 
 
         while (index < maxCycles && !game) {
 
@@ -64,6 +65,7 @@ public:
                 if (std::get<0>(persona_loc) > matrix.size() && std::get<1>(persona_loc) > matrix.size()) {
                     std::cout << "Persona has won the game!" << std::endl; 
                     game = true; 
+                    Pwin = true; 
                     break; 
                 }
 
@@ -73,7 +75,7 @@ public:
         }
 
 
-                if (index >= maxCycles-1) {
+                if (index > maxCycles-1 && Pwin == false) {
             std::cout << "Maximum number of cycles reached. Game over." << std::endl; 
             }
 
