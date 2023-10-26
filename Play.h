@@ -40,11 +40,7 @@ public:
     };
 
     void playCycle(int maxCycles, double snareTriggerDistance) {
-        int index = 0; 
-
-        if (index >= maxCycles) {
-            std::cout << "Maximum number of cycles reached. Game over." << std::endl; 
-        }
+        int index = 0;
 
 
         // determine how big the matrix is 
@@ -76,6 +72,10 @@ public:
             } 
 
             index++;
+        }
+
+        if (index >= maxCycles) {
+            std::cout << "Maximum number of cycles reached. Game over." << std::endl; 
         }
 
 
