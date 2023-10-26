@@ -47,6 +47,7 @@ public:
         //how????
 
         while (index <= maxCycles && !game) {
+                                    index++;
 
 
             if (index >= maxCycles) {
@@ -76,8 +77,6 @@ public:
                     break; 
                 }
 
-            
-                        index++;
             }
 
         }
