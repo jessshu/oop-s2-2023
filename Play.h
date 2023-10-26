@@ -46,7 +46,7 @@ public:
         // determine how big the matrix is 
         //how????
 
-        while (index <= maxCycles && !game) {
+        while (index < maxCycles && !game) {
             index++;
 
             for (int i =0; i < matrix.size(); i++) {
@@ -76,9 +76,8 @@ public:
         }
 
 
-                if (index >= maxCycles) {
+                if (index >= maxCycles-1) {
             std::cout << "Maximum number of cycles reached. Game over." << std::endl; 
-            game = true; 
             }
 
     };
